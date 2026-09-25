@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+    <h2>AdminPanel</h2>
+
+    <a href="#" class="menu-link active" data-page="dashboard">Dashboard</a>
+    <a href="#" class="menu-link" data-page="users">Users</a>
+    <a href="#" class="menu-link" data-page="orders">Orders</a>
+    <a href="#" class="menu-link" data-page="products">Products</a>
+    <a href="#" class="menu-link" data-page="settings">Settings</a>
+</aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <button id="menuBtn">☰</button>
+
+            <h1>Dashboard</h1>
+
+            <input type="text" id="search" placeholder="Search user...">
+        </nav>
+
+        <!-- Dashboard -->
+<section id="dashboard" class="page">
+    <h2>Dashboard</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Users</h3>
+            <p>1,250</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Orders</h3>
+            <p>856</p>
+        </div>
+
+        <div class="card">
+            <h3>Products</h3>
+            <p>320</p>
+        </div>
+
+        <div class="card">
+            <h3>Revenue</h3>
+            <p>₹85,000</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Users -->
+<section id="users" class="page">
+    <h2>Users</h2>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Rahul</td>
+                <td>rahul@gmail.com</td>
+                <td>Active</td>
+            </tr>
+
+            <tr>
+                <td>Aman</td>
+                <td>aman@gmail.com</td>
+                <td>Active</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+
+<!-- Orders -->
+<section id="orders" class="page">
+    <h2>Orders</h2>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>#1001</td>
+                <td>Rahul</td>
+                <td>₹2,500</td>
+                <td>Delivered</td>
+            </tr>
+
+            <tr>
+                <td>#1002</td>
+                <td>Aman</td>
+                <td>₹1,200</td>
+                <td>Pending</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+
+<!-- Products -->
+<section id="products" class="page">
+    <h2>Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product">
+            <h3>Laptop</h3>
+            <p>₹55,000</p>
+        </div>
+
+        <div class="product">
+            <h3>Headphones</h3>
+            <p>₹2,500</p>
+        </div>
+
+        <div class="product">
+            <h3>Keyboard</h3>
+            <p>₹1,500</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Settings -->
+<section id="settings" class="page">
+    <h2>Settings</h2>
+
+    <div class="settings-box">
+
+        <label>Username</label>
+        <input type="text" value="Admin">
+
+        <label>Email</label>
+        <input type="email" value="admin@gmail.com">
+
+        <button>Save Changes</button>
+
+    </div>
+</section>
+
+        <!-- Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>1,250</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>856</p>
+            </div>
+
+            <div class="card">
+                <h3>Products</h3>
+                <p>320</p>
+            </div>
+
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>₹85,000</p>
+            </div>
+
+        </section>
+
+
+        <!-- Users Table -->
+        <section class="table-box">
+
+            <h2>Recent Users</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="userTable">
+
+                    <tr>
+                        <td>Rahul</td>
+                        <td>rahul@gmail.com</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Aman</td>
+                        <td>aman@gmail.com</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Priya</td>
+                        <td>priya@gmail.com</td>
+                        <td>Inactive</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rohit</td>
+                        <td>rohit@gmail.com</td>
+                        <td>Active</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
